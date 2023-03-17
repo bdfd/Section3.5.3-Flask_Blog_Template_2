@@ -1,0 +1,30 @@
+<!--
+ * @Date         : 2022-09-13 10:20:43
+ * @Author       : BDFD,bdfd2005@gmail.com
+ * @Github       : https://github.com/bdfd
+ * @LastEditTime : 2022-09-13 10:22:18
+ * @LastEditors  : BDFD
+ * @Description  : 
+ * @FilePath     : \backend\templates\signup.html
+ * Copyright (c) 2022 by BDFD, All Rights Reserved. 
+-->
+{% extends "./layout/base.html" %}
+{% block content %}
+<h2>Backend Register Page</h2>
+<form action="" method="post">
+    <p>
+        {{ form.username.label }}<br />
+        {{ form.username(size=20) }}
+    </p>
+    <p>
+        {{ form.password.label }}<br />
+        {{ form.password(size=20) }}
+    </p>
+    <p>
+        {{ form.submit() }}
+    </p>
+</form>
+
+<a href="/">Back to Index/Home</a>
+
+{% endblock %}
