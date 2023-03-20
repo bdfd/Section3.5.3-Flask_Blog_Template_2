@@ -2,10 +2,10 @@
 Date         : 2022-11-29 15:11:49
 Author       : BDFD,bdfd2005@gmail.com
 Github       : https://github.com/bdfd
-LastEditTime : 2022-11-29 15:12:19
+LastEditTime : 2023-03-20 13:31:46
 LastEditors  : BDFD
 Description  : 
-FilePath     : \server.py
+FilePath     : \app.py
 Copyright (c) 2022 by BDFD, All Rights Reserved. 
 '''
 
@@ -13,9 +13,9 @@ Copyright (c) 2022 by BDFD, All Rights Reserved.
 # from pickle import TRUE
 # from unittest import result
 # from uuid import RESERVED_FUTURE
+from flask import Flask, Blueprint, render_template, request, redirect, url_for, flash
 from distutils.debug import DEBUG
 from doctest import debug
-from flask import Flask, Blueprint, render_template, request, redirect, url_for, flash
 from Component.forms import SignUpForm
 from backend.register import register
 
